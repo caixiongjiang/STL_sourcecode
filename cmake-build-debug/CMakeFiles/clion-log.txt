@@ -1,0 +1,24 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/gcc-11 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 -G Ninja "/Users/jarsonsmac/CLionProjects/STL source code"
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Checking whether C compiler has -isysroot
+-- Checking whether C compiler has -isysroot - yes
+-- Checking whether C compiler supports OSX deployment target flag
+-- Checking whether C compiler supports OSX deployment target flag - yes
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/local/Cellar/gcc/11.2.0_3/bin/gcc-11 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jarsonsmac/CLionProjects/STL source code/cmake-build-debug
