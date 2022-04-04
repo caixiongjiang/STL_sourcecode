@@ -2,9 +2,9 @@
 
 ### 容器结构及分类
 
-![容器的分类]()
+![容器的分类](img1.jpg)
 
-![容器的分类]()
+![容器的分类](img2.jpg)
 
 * 序列式容器
     * 数组（Array）：定长数组，无法扩充
@@ -61,8 +61,30 @@ int compareStrings(const void* a, const void* b)
 }
 ```
 
-* 使用容器array：[array.cpp]()
-* 使用容器vector：[vector.cpp]()
-* 使用容器list：[list.cpp]()
+### 顺序容器使用及测试
+* 使用容器array：[array.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/array.cpp)
+* 使用容器vector：[vector.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/vector.cpp)
+* 使用容器list：[list.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/list.cpp)
+* 使用容器forward_list：[forward_list.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/forward_list.cpp)
+* 使用容器slist：[slist.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/slist.cpp)
+* 使用容器deque：[deque.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/deque.cpp)
+  * deque容器的结构：
+  
+  ![deque容器的结构](img3.jpg)
+  
+  deque容器由一个个具有一定长度的buffer组成，在每一个buffer上是连续的，
+但是buffer与buffer之间不是连续的。（也就是所谓的**分段连续**的特点）
+  
+  deque内存扩充的机制是向两边扩充：哪边不够用了就扩充一下，每次都扩充一个buffer。
+### 关联式容器使用及测试
+**注意一点，只要是关联式的容器它的查找效率都是非常高的！**
+* 使用容器stack：[stack.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/stack.cpp)
+  
+  deque其实已经涵盖了stack的功能：
+  
+  ![deque和stack的结构对比](img4.jpg)
+* 使用容器queue：[queue.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/queue.cpp)
+  
+  deque其实已经涵盖了queue的功能：
 
-
+  ![deque和queue的结构对比](img5.jpg)

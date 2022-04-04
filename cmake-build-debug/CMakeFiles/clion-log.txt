@@ -2,6 +2,12 @@
     -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
     -- src/main.cpp will be compiled to bin/main
     -- src/array.cpp will be compiled to bin/array
+    -- src/deque.cpp will be compiled to bin/deque
+    -- src/forward_list.cpp will be compiled to bin/forward_list
+    -- src/list.cpp will be compiled to bin/list
+    -- src/queue.cpp will be compiled to bin/queue
+    -- src/slist.cpp will be compiled to bin/slist
+    -- src/stack.cpp will be compiled to bin/stack
     -- src/vector.cpp will be compiled to bin/vector
 -- Configuring done
 -- Generating done
