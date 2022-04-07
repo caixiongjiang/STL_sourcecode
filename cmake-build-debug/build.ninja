@@ -64,6 +64,99 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
+# Object build statements for EXECUTABLE target vector
+
+
+#############################################
+# Order-only phony target for vector
+
+build cmake_object_order_depends_target_vector: phony || CMakeFiles/vector.dir
+
+build CMakeFiles/vector.dir/第二讲/vector.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/vector.cpp || cmake_object_order_depends_target_vector
+  DEP_FILE = CMakeFiles/vector.dir/第二讲/vector.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/vector.dir
+  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vector
+
+
+#############################################
+# Link the executable vector
+
+build vector: CXX_EXECUTABLE_LINKER__vector_Debug CMakeFiles/vector.dir/第二讲/vector.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/vector.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = vector
+  TARGET_PDB = vector.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unordered_multiset
+
+
+#############################################
+# Order-only phony target for unordered_multiset
+
+build cmake_object_order_depends_target_unordered_multiset: phony || CMakeFiles/unordered_multiset.dir
+
+build CMakeFiles/unordered_multiset.dir/第二讲/unordered_multiset.cpp.o: CXX_COMPILER__unordered_multiset_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/unordered_multiset.cpp || cmake_object_order_depends_target_unordered_multiset
+  DEP_FILE = CMakeFiles/unordered_multiset.dir/第二讲/unordered_multiset.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/unordered_multiset.dir
+  OBJECT_FILE_DIR = CMakeFiles/unordered_multiset.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unordered_multiset
+
+
+#############################################
+# Link the executable unordered_multiset
+
+build unordered_multiset: CXX_EXECUTABLE_LINKER__unordered_multiset_Debug CMakeFiles/unordered_multiset.dir/第二讲/unordered_multiset.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/unordered_multiset.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = unordered_multiset
+  TARGET_PDB = unordered_multiset.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unordered_map
+
+
+#############################################
+# Order-only phony target for unordered_map
+
+build cmake_object_order_depends_target_unordered_map: phony || CMakeFiles/unordered_map.dir
+
+build CMakeFiles/unordered_map.dir/第二讲/unordered_map.cpp.o: CXX_COMPILER__unordered_map_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/unordered_map.cpp || cmake_object_order_depends_target_unordered_map
+  DEP_FILE = CMakeFiles/unordered_map.dir/第二讲/unordered_map.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/unordered_map.dir
+  OBJECT_FILE_DIR = CMakeFiles/unordered_map.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unordered_map
+
+
+#############################################
+# Link the executable unordered_map
+
+build unordered_map: CXX_EXECUTABLE_LINKER__unordered_map_Debug CMakeFiles/unordered_map.dir/第二讲/unordered_map.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/unordered_map.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = unordered_map
+  TARGET_PDB = unordered_map.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target stack
 
 
@@ -78,36 +171,6 @@ build CMakeFiles/stack.dir/第二讲/stack.cpp.o: CXX_COMPILER__stack_Debug /Use
   OBJECT_DIR = CMakeFiles/stack.dir
   OBJECT_FILE_DIR = CMakeFiles/stack.dir/第二讲
 
-build CMakeFiles/stack.dir/第二讲/list.cpp.o: CXX_COMPILER__stack_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_stack
-  DEP_FILE = CMakeFiles/stack.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/stack.dir
-  OBJECT_FILE_DIR = CMakeFiles/stack.dir/第二讲
-
-build CMakeFiles/stack.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__stack_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_stack
-  DEP_FILE = CMakeFiles/stack.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/stack.dir
-  OBJECT_FILE_DIR = CMakeFiles/stack.dir/第二讲
-
-build CMakeFiles/stack.dir/第二讲/slist.cpp.o: CXX_COMPILER__stack_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_stack
-  DEP_FILE = CMakeFiles/stack.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/stack.dir
-  OBJECT_FILE_DIR = CMakeFiles/stack.dir/第二讲
-
-build CMakeFiles/stack.dir/第二讲/deque.cpp.o: CXX_COMPILER__stack_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_stack
-  DEP_FILE = CMakeFiles/stack.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/stack.dir
-  OBJECT_FILE_DIR = CMakeFiles/stack.dir/第二讲
-
-build CMakeFiles/stack.dir/第二讲/queue.cpp.o: CXX_COMPILER__stack_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_stack
-  DEP_FILE = CMakeFiles/stack.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/stack.dir
-  OBJECT_FILE_DIR = CMakeFiles/stack.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target stack
@@ -116,13 +179,75 @@ build CMakeFiles/stack.dir/第二讲/queue.cpp.o: CXX_COMPILER__stack_Debug /Use
 #############################################
 # Link the executable stack
 
-build stack: CXX_EXECUTABLE_LINKER__stack_Debug CMakeFiles/stack.dir/第二讲/stack.cpp.o CMakeFiles/stack.dir/第二讲/list.cpp.o CMakeFiles/stack.dir/第二讲/forward_list.cpp.o CMakeFiles/stack.dir/第二讲/slist.cpp.o CMakeFiles/stack.dir/第二讲/deque.cpp.o CMakeFiles/stack.dir/第二讲/queue.cpp.o
+build stack: CXX_EXECUTABLE_LINKER__stack_Debug CMakeFiles/stack.dir/第二讲/stack.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/stack.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = stack
   TARGET_PDB = stack.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target slist
+
+
+#############################################
+# Order-only phony target for slist
+
+build cmake_object_order_depends_target_slist: phony || CMakeFiles/slist.dir
+
+build CMakeFiles/slist.dir/第二讲/slist.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_slist
+  DEP_FILE = CMakeFiles/slist.dir/第二讲/slist.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/slist.dir
+  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target slist
+
+
+#############################################
+# Link the executable slist
+
+build slist: CXX_EXECUTABLE_LINKER__slist_Debug CMakeFiles/slist.dir/第二讲/slist.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/slist.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = slist
+  TARGET_PDB = slist.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target set
+
+
+#############################################
+# Order-only phony target for set
+
+build cmake_object_order_depends_target_set: phony || CMakeFiles/set.dir
+
+build CMakeFiles/set.dir/第二讲/set.cpp.o: CXX_COMPILER__set_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/set.cpp || cmake_object_order_depends_target_set
+  DEP_FILE = CMakeFiles/set.dir/第二讲/set.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/set.dir
+  OBJECT_FILE_DIR = CMakeFiles/set.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target set
+
+
+#############################################
+# Link the executable set
+
+build set: CXX_EXECUTABLE_LINKER__set_Debug CMakeFiles/set.dir/第二讲/set.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/set.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = set
+  TARGET_PDB = set.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target queue
@@ -139,36 +264,6 @@ build CMakeFiles/queue.dir/第二讲/queue.cpp.o: CXX_COMPILER__queue_Debug /Use
   OBJECT_DIR = CMakeFiles/queue.dir
   OBJECT_FILE_DIR = CMakeFiles/queue.dir/第二讲
 
-build CMakeFiles/queue.dir/第二讲/list.cpp.o: CXX_COMPILER__queue_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_queue
-  DEP_FILE = CMakeFiles/queue.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/queue.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue.dir/第二讲
-
-build CMakeFiles/queue.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__queue_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_queue
-  DEP_FILE = CMakeFiles/queue.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/queue.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue.dir/第二讲
-
-build CMakeFiles/queue.dir/第二讲/slist.cpp.o: CXX_COMPILER__queue_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_queue
-  DEP_FILE = CMakeFiles/queue.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/queue.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue.dir/第二讲
-
-build CMakeFiles/queue.dir/第二讲/deque.cpp.o: CXX_COMPILER__queue_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_queue
-  DEP_FILE = CMakeFiles/queue.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/queue.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue.dir/第二讲
-
-build CMakeFiles/queue.dir/第二讲/stack.cpp.o: CXX_COMPILER__queue_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_queue
-  DEP_FILE = CMakeFiles/queue.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/queue.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target queue
@@ -177,13 +272,106 @@ build CMakeFiles/queue.dir/第二讲/stack.cpp.o: CXX_COMPILER__queue_Debug /Use
 #############################################
 # Link the executable queue
 
-build queue: CXX_EXECUTABLE_LINKER__queue_Debug CMakeFiles/queue.dir/第二讲/queue.cpp.o CMakeFiles/queue.dir/第二讲/list.cpp.o CMakeFiles/queue.dir/第二讲/forward_list.cpp.o CMakeFiles/queue.dir/第二讲/slist.cpp.o CMakeFiles/queue.dir/第二讲/deque.cpp.o CMakeFiles/queue.dir/第二讲/stack.cpp.o
+build queue: CXX_EXECUTABLE_LINKER__queue_Debug CMakeFiles/queue.dir/第二讲/queue.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/queue.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = queue
   TARGET_PDB = queue.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target multiset
+
+
+#############################################
+# Order-only phony target for multiset
+
+build cmake_object_order_depends_target_multiset: phony || CMakeFiles/multiset.dir
+
+build CMakeFiles/multiset.dir/第二讲/multiset.cpp.o: CXX_COMPILER__multiset_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/multiset.cpp || cmake_object_order_depends_target_multiset
+  DEP_FILE = CMakeFiles/multiset.dir/第二讲/multiset.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/multiset.dir
+  OBJECT_FILE_DIR = CMakeFiles/multiset.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target multiset
+
+
+#############################################
+# Link the executable multiset
+
+build multiset: CXX_EXECUTABLE_LINKER__multiset_Debug CMakeFiles/multiset.dir/第二讲/multiset.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/multiset.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = multiset
+  TARGET_PDB = multiset.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unordered_set
+
+
+#############################################
+# Order-only phony target for unordered_set
+
+build cmake_object_order_depends_target_unordered_set: phony || CMakeFiles/unordered_set.dir
+
+build CMakeFiles/unordered_set.dir/第二讲/unordered_set.cpp.o: CXX_COMPILER__unordered_set_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/unordered_set.cpp || cmake_object_order_depends_target_unordered_set
+  DEP_FILE = CMakeFiles/unordered_set.dir/第二讲/unordered_set.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/unordered_set.dir
+  OBJECT_FILE_DIR = CMakeFiles/unordered_set.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unordered_set
+
+
+#############################################
+# Link the executable unordered_set
+
+build unordered_set: CXX_EXECUTABLE_LINKER__unordered_set_Debug CMakeFiles/unordered_set.dir/第二讲/unordered_set.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/unordered_set.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = unordered_set
+  TARGET_PDB = unordered_set.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target multimap
+
+
+#############################################
+# Order-only phony target for multimap
+
+build cmake_object_order_depends_target_multimap: phony || CMakeFiles/multimap.dir
+
+build CMakeFiles/multimap.dir/第二讲/multimap.cpp.o: CXX_COMPILER__multimap_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/multimap.cpp || cmake_object_order_depends_target_multimap
+  DEP_FILE = CMakeFiles/multimap.dir/第二讲/multimap.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/multimap.dir
+  OBJECT_FILE_DIR = CMakeFiles/multimap.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target multimap
+
+
+#############################################
+# Link the executable multimap
+
+build multimap: CXX_EXECUTABLE_LINKER__multimap_Debug CMakeFiles/multimap.dir/第二讲/multimap.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/multimap.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = multimap
+  TARGET_PDB = multimap.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target main
@@ -200,42 +388,6 @@ build CMakeFiles/main.dir/main.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
-build CMakeFiles/main.dir/第二讲/list.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/第二讲
-
-build CMakeFiles/main.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/第二讲
-
-build CMakeFiles/main.dir/第二讲/slist.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/第二讲
-
-build CMakeFiles/main.dir/第二讲/deque.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/第二讲
-
-build CMakeFiles/main.dir/第二讲/stack.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/第二讲
-
-build CMakeFiles/main.dir/第二讲/queue.cpp.o: CXX_COMPILER__main_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -244,7 +396,7 @@ build CMakeFiles/main.dir/第二讲/queue.cpp.o: CXX_COMPILER__main_Debug /Users
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/第二讲/list.cpp.o CMakeFiles/main.dir/第二讲/forward_list.cpp.o CMakeFiles/main.dir/第二讲/slist.cpp.o CMakeFiles/main.dir/第二讲/deque.cpp.o CMakeFiles/main.dir/第二讲/stack.cpp.o CMakeFiles/main.dir/第二讲/queue.cpp.o
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
@@ -267,36 +419,6 @@ build CMakeFiles/list.dir/第二讲/list.cpp.o: CXX_COMPILER__list_Debug /Users/
   OBJECT_DIR = CMakeFiles/list.dir
   OBJECT_FILE_DIR = CMakeFiles/list.dir/第二讲
 
-build CMakeFiles/list.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_list
-  DEP_FILE = CMakeFiles/list.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/list.dir
-  OBJECT_FILE_DIR = CMakeFiles/list.dir/第二讲
-
-build CMakeFiles/list.dir/第二讲/slist.cpp.o: CXX_COMPILER__list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_list
-  DEP_FILE = CMakeFiles/list.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/list.dir
-  OBJECT_FILE_DIR = CMakeFiles/list.dir/第二讲
-
-build CMakeFiles/list.dir/第二讲/deque.cpp.o: CXX_COMPILER__list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_list
-  DEP_FILE = CMakeFiles/list.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/list.dir
-  OBJECT_FILE_DIR = CMakeFiles/list.dir/第二讲
-
-build CMakeFiles/list.dir/第二讲/stack.cpp.o: CXX_COMPILER__list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_list
-  DEP_FILE = CMakeFiles/list.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/list.dir
-  OBJECT_FILE_DIR = CMakeFiles/list.dir/第二讲
-
-build CMakeFiles/list.dir/第二讲/queue.cpp.o: CXX_COMPILER__list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_list
-  DEP_FILE = CMakeFiles/list.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/list.dir
-  OBJECT_FILE_DIR = CMakeFiles/list.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target list
@@ -305,74 +427,13 @@ build CMakeFiles/list.dir/第二讲/queue.cpp.o: CXX_COMPILER__list_Debug /Users
 #############################################
 # Link the executable list
 
-build list: CXX_EXECUTABLE_LINKER__list_Debug CMakeFiles/list.dir/第二讲/list.cpp.o CMakeFiles/list.dir/第二讲/forward_list.cpp.o CMakeFiles/list.dir/第二讲/slist.cpp.o CMakeFiles/list.dir/第二讲/deque.cpp.o CMakeFiles/list.dir/第二讲/stack.cpp.o CMakeFiles/list.dir/第二讲/queue.cpp.o
+build list: CXX_EXECUTABLE_LINKER__list_Debug CMakeFiles/list.dir/第二讲/list.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/list.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = list
   TARGET_PDB = list.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target slist
-
-
-#############################################
-# Order-only phony target for slist
-
-build cmake_object_order_depends_target_slist: phony || CMakeFiles/slist.dir
-
-build CMakeFiles/slist.dir/第二讲/slist.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_slist
-  DEP_FILE = CMakeFiles/slist.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/slist.dir
-  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
-
-build CMakeFiles/slist.dir/第二讲/list.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_slist
-  DEP_FILE = CMakeFiles/slist.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/slist.dir
-  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
-
-build CMakeFiles/slist.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_slist
-  DEP_FILE = CMakeFiles/slist.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/slist.dir
-  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
-
-build CMakeFiles/slist.dir/第二讲/deque.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_slist
-  DEP_FILE = CMakeFiles/slist.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/slist.dir
-  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
-
-build CMakeFiles/slist.dir/第二讲/stack.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_slist
-  DEP_FILE = CMakeFiles/slist.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/slist.dir
-  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
-
-build CMakeFiles/slist.dir/第二讲/queue.cpp.o: CXX_COMPILER__slist_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_slist
-  DEP_FILE = CMakeFiles/slist.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/slist.dir
-  OBJECT_FILE_DIR = CMakeFiles/slist.dir/第二讲
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target slist
-
-
-#############################################
-# Link the executable slist
-
-build slist: CXX_EXECUTABLE_LINKER__slist_Debug CMakeFiles/slist.dir/第二讲/slist.cpp.o CMakeFiles/slist.dir/第二讲/list.cpp.o CMakeFiles/slist.dir/第二讲/forward_list.cpp.o CMakeFiles/slist.dir/第二讲/deque.cpp.o CMakeFiles/slist.dir/第二讲/stack.cpp.o CMakeFiles/slist.dir/第二讲/queue.cpp.o
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
-  OBJECT_DIR = CMakeFiles/slist.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = slist
-  TARGET_PDB = slist.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target array
@@ -389,42 +450,6 @@ build CMakeFiles/array.dir/第二讲/array.cpp.o: CXX_COMPILER__array_Debug /Use
   OBJECT_DIR = CMakeFiles/array.dir
   OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
 
-build CMakeFiles/array.dir/第二讲/list.cpp.o: CXX_COMPILER__array_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles/array.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/array.dir
-  OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
-
-build CMakeFiles/array.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__array_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles/array.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/array.dir
-  OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
-
-build CMakeFiles/array.dir/第二讲/slist.cpp.o: CXX_COMPILER__array_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles/array.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/array.dir
-  OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
-
-build CMakeFiles/array.dir/第二讲/deque.cpp.o: CXX_COMPILER__array_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles/array.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/array.dir
-  OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
-
-build CMakeFiles/array.dir/第二讲/stack.cpp.o: CXX_COMPILER__array_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles/array.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/array.dir
-  OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
-
-build CMakeFiles/array.dir/第二讲/queue.cpp.o: CXX_COMPILER__array_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles/array.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/array.dir
-  OBJECT_FILE_DIR = CMakeFiles/array.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target array
@@ -433,7 +458,7 @@ build CMakeFiles/array.dir/第二讲/queue.cpp.o: CXX_COMPILER__array_Debug /Use
 #############################################
 # Link the executable array
 
-build array: CXX_EXECUTABLE_LINKER__array_Debug CMakeFiles/array.dir/第二讲/array.cpp.o CMakeFiles/array.dir/第二讲/list.cpp.o CMakeFiles/array.dir/第二讲/forward_list.cpp.o CMakeFiles/array.dir/第二讲/slist.cpp.o CMakeFiles/array.dir/第二讲/deque.cpp.o CMakeFiles/array.dir/第二讲/stack.cpp.o CMakeFiles/array.dir/第二讲/queue.cpp.o
+build array: CXX_EXECUTABLE_LINKER__array_Debug CMakeFiles/array.dir/第二讲/array.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/array.dir
   POST_BUILD = :
@@ -442,65 +467,35 @@ build array: CXX_EXECUTABLE_LINKER__array_Debug CMakeFiles/array.dir/第二讲/a
   TARGET_PDB = array.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target deque
+# Object build statements for EXECUTABLE target map
 
 
 #############################################
-# Order-only phony target for deque
+# Order-only phony target for map
 
-build cmake_object_order_depends_target_deque: phony || CMakeFiles/deque.dir
+build cmake_object_order_depends_target_map: phony || CMakeFiles/map.dir
 
-build CMakeFiles/deque.dir/第二讲/deque.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_deque
-  DEP_FILE = CMakeFiles/deque.dir/第二讲/deque.cpp.o.d
+build CMakeFiles/map.dir/第二讲/map.cpp.o: CXX_COMPILER__map_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/map.cpp || cmake_object_order_depends_target_map
+  DEP_FILE = CMakeFiles/map.dir/第二讲/map.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/deque.dir
-  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
-
-build CMakeFiles/deque.dir/第二讲/list.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_deque
-  DEP_FILE = CMakeFiles/deque.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/deque.dir
-  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
-
-build CMakeFiles/deque.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_deque
-  DEP_FILE = CMakeFiles/deque.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/deque.dir
-  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
-
-build CMakeFiles/deque.dir/第二讲/slist.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_deque
-  DEP_FILE = CMakeFiles/deque.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/deque.dir
-  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
-
-build CMakeFiles/deque.dir/第二讲/stack.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_deque
-  DEP_FILE = CMakeFiles/deque.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/deque.dir
-  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
-
-build CMakeFiles/deque.dir/第二讲/queue.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_deque
-  DEP_FILE = CMakeFiles/deque.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/deque.dir
-  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
+  OBJECT_DIR = CMakeFiles/map.dir
+  OBJECT_FILE_DIR = CMakeFiles/map.dir/第二讲
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target deque
+# Link build statements for EXECUTABLE target map
 
 
 #############################################
-# Link the executable deque
+# Link the executable map
 
-build deque: CXX_EXECUTABLE_LINKER__deque_Debug CMakeFiles/deque.dir/第二讲/deque.cpp.o CMakeFiles/deque.dir/第二讲/list.cpp.o CMakeFiles/deque.dir/第二讲/forward_list.cpp.o CMakeFiles/deque.dir/第二讲/slist.cpp.o CMakeFiles/deque.dir/第二讲/stack.cpp.o CMakeFiles/deque.dir/第二讲/queue.cpp.o
+build map: CXX_EXECUTABLE_LINKER__map_Debug CMakeFiles/map.dir/第二讲/map.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
-  OBJECT_DIR = CMakeFiles/deque.dir
+  OBJECT_DIR = CMakeFiles/map.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = deque
-  TARGET_PDB = deque.dbg
+  TARGET_FILE = map
+  TARGET_PDB = map.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target forward_list
@@ -517,36 +512,6 @@ build CMakeFiles/forward_list.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__fo
   OBJECT_DIR = CMakeFiles/forward_list.dir
   OBJECT_FILE_DIR = CMakeFiles/forward_list.dir/第二讲
 
-build CMakeFiles/forward_list.dir/第二讲/list.cpp.o: CXX_COMPILER__forward_list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_forward_list
-  DEP_FILE = CMakeFiles/forward_list.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/forward_list.dir
-  OBJECT_FILE_DIR = CMakeFiles/forward_list.dir/第二讲
-
-build CMakeFiles/forward_list.dir/第二讲/slist.cpp.o: CXX_COMPILER__forward_list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_forward_list
-  DEP_FILE = CMakeFiles/forward_list.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/forward_list.dir
-  OBJECT_FILE_DIR = CMakeFiles/forward_list.dir/第二讲
-
-build CMakeFiles/forward_list.dir/第二讲/deque.cpp.o: CXX_COMPILER__forward_list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_forward_list
-  DEP_FILE = CMakeFiles/forward_list.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/forward_list.dir
-  OBJECT_FILE_DIR = CMakeFiles/forward_list.dir/第二讲
-
-build CMakeFiles/forward_list.dir/第二讲/stack.cpp.o: CXX_COMPILER__forward_list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_forward_list
-  DEP_FILE = CMakeFiles/forward_list.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/forward_list.dir
-  OBJECT_FILE_DIR = CMakeFiles/forward_list.dir/第二讲
-
-build CMakeFiles/forward_list.dir/第二讲/queue.cpp.o: CXX_COMPILER__forward_list_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_forward_list
-  DEP_FILE = CMakeFiles/forward_list.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/forward_list.dir
-  OBJECT_FILE_DIR = CMakeFiles/forward_list.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target forward_list
@@ -555,7 +520,7 @@ build CMakeFiles/forward_list.dir/第二讲/queue.cpp.o: CXX_COMPILER__forward_l
 #############################################
 # Link the executable forward_list
 
-build forward_list: CXX_EXECUTABLE_LINKER__forward_list_Debug CMakeFiles/forward_list.dir/第二讲/forward_list.cpp.o CMakeFiles/forward_list.dir/第二讲/list.cpp.o CMakeFiles/forward_list.dir/第二讲/slist.cpp.o CMakeFiles/forward_list.dir/第二讲/deque.cpp.o CMakeFiles/forward_list.dir/第二讲/stack.cpp.o CMakeFiles/forward_list.dir/第二讲/queue.cpp.o
+build forward_list: CXX_EXECUTABLE_LINKER__forward_list_Debug CMakeFiles/forward_list.dir/第二讲/forward_list.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/forward_list.dir
   POST_BUILD = :
@@ -564,71 +529,97 @@ build forward_list: CXX_EXECUTABLE_LINKER__forward_list_Debug CMakeFiles/forward
   TARGET_PDB = forward_list.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target vector
+# Object build statements for EXECUTABLE target deque
 
 
 #############################################
-# Order-only phony target for vector
+# Order-only phony target for deque
 
-build cmake_object_order_depends_target_vector: phony || CMakeFiles/vector.dir
+build cmake_object_order_depends_target_deque: phony || CMakeFiles/deque.dir
 
-build CMakeFiles/vector.dir/第二讲/vector.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/vector.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/vector.cpp.o.d
+build CMakeFiles/deque.dir/第二讲/deque.cpp.o: CXX_COMPILER__deque_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_deque
+  DEP_FILE = CMakeFiles/deque.dir/第二讲/deque.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
-
-build CMakeFiles/vector.dir/第二讲/list.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
-
-build CMakeFiles/vector.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
-
-build CMakeFiles/vector.dir/第二讲/slist.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
-
-build CMakeFiles/vector.dir/第二讲/deque.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
-
-build CMakeFiles/vector.dir/第二讲/stack.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
-
-build CMakeFiles/vector.dir/第二讲/queue.cpp.o: CXX_COMPILER__vector_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_vector
-  DEP_FILE = CMakeFiles/vector.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/vector.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector.dir/第二讲
+  OBJECT_DIR = CMakeFiles/deque.dir
+  OBJECT_FILE_DIR = CMakeFiles/deque.dir/第二讲
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target vector
+# Link build statements for EXECUTABLE target deque
 
 
 #############################################
-# Link the executable vector
+# Link the executable deque
 
-build vector: CXX_EXECUTABLE_LINKER__vector_Debug CMakeFiles/vector.dir/第二讲/vector.cpp.o CMakeFiles/vector.dir/第二讲/list.cpp.o CMakeFiles/vector.dir/第二讲/forward_list.cpp.o CMakeFiles/vector.dir/第二讲/slist.cpp.o CMakeFiles/vector.dir/第二讲/deque.cpp.o CMakeFiles/vector.dir/第二讲/stack.cpp.o CMakeFiles/vector.dir/第二讲/queue.cpp.o
+build deque: CXX_EXECUTABLE_LINKER__deque_Debug CMakeFiles/deque.dir/第二讲/deque.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
-  OBJECT_DIR = CMakeFiles/vector.dir
+  OBJECT_DIR = CMakeFiles/deque.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = vector
-  TARGET_PDB = vector.dbg
+  TARGET_FILE = deque
+  TARGET_PDB = deque.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sample
+
+
+#############################################
+# Order-only phony target for sample
+
+build cmake_object_order_depends_target_sample: phony || CMakeFiles/sample.dir
+
+build CMakeFiles/sample.dir/souuce/sample.cpp.o: CXX_COMPILER__sample_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/souuce/sample.cpp || cmake_object_order_depends_target_sample
+  DEP_FILE = CMakeFiles/sample.dir/souuce/sample.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/sample.dir
+  OBJECT_FILE_DIR = CMakeFiles/sample.dir/souuce
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sample
+
+
+#############################################
+# Link the executable sample
+
+build sample: CXX_EXECUTABLE_LINKER__sample_Debug CMakeFiles/sample.dir/souuce/sample.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/sample.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sample
+  TARGET_PDB = sample.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unordered_multimap
+
+
+#############################################
+# Order-only phony target for unordered_multimap
+
+build cmake_object_order_depends_target_unordered_multimap: phony || CMakeFiles/unordered_multimap.dir
+
+build CMakeFiles/unordered_multimap.dir/第二讲/unordered_multimap.cpp.o: CXX_COMPILER__unordered_multimap_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/unordered_multimap.cpp || cmake_object_order_depends_target_unordered_multimap
+  DEP_FILE = CMakeFiles/unordered_multimap.dir/第二讲/unordered_multimap.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/unordered_multimap.dir
+  OBJECT_FILE_DIR = CMakeFiles/unordered_multimap.dir/第二讲
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unordered_multimap
+
+
+#############################################
+# Link the executable unordered_multimap
+
+build unordered_multimap: CXX_EXECUTABLE_LINKER__unordered_multimap_Debug CMakeFiles/unordered_multimap.dir/第二讲/unordered_multimap.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = CMakeFiles/unordered_multimap.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = unordered_multimap
+  TARGET_PDB = unordered_multimap.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target CMakeCXXCompilerId
@@ -645,42 +636,6 @@ build CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXX
   OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
   OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX
 
-build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/list.cpp.o: CXX_COMPILER__CMakeCXXCompilerId_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/list.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles/CMakeCXXCompilerId.dir/第二讲/list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/第二讲
-
-build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/forward_list.cpp.o: CXX_COMPILER__CMakeCXXCompilerId_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/forward_list.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles/CMakeCXXCompilerId.dir/第二讲/forward_list.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/第二讲
-
-build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/slist.cpp.o: CXX_COMPILER__CMakeCXXCompilerId_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/slist.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles/CMakeCXXCompilerId.dir/第二讲/slist.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/第二讲
-
-build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/deque.cpp.o: CXX_COMPILER__CMakeCXXCompilerId_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/deque.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles/CMakeCXXCompilerId.dir/第二讲/deque.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/第二讲
-
-build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/stack.cpp.o: CXX_COMPILER__CMakeCXXCompilerId_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/stack.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles/CMakeCXXCompilerId.dir/第二讲/stack.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/第二讲
-
-build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/queue.cpp.o: CXX_COMPILER__CMakeCXXCompilerId_Debug /Users/jarsonsmac/CLionProjects/STL$ source$ code/第二讲/queue.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles/CMakeCXXCompilerId.dir/第二讲/queue.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles/CMakeCXXCompilerId.dir/第二讲
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CMakeCXXCompilerId
@@ -689,7 +644,7 @@ build CMakeFiles/CMakeCXXCompilerId.dir/第二讲/queue.cpp.o: CXX_COMPILER__CMa
 #############################################
 # Link the executable CMakeCXXCompilerId
 
-build CMakeCXXCompilerId: CXX_EXECUTABLE_LINKER__CMakeCXXCompilerId_Debug CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o CMakeFiles/CMakeCXXCompilerId.dir/第二讲/list.cpp.o CMakeFiles/CMakeCXXCompilerId.dir/第二讲/forward_list.cpp.o CMakeFiles/CMakeCXXCompilerId.dir/第二讲/slist.cpp.o CMakeFiles/CMakeCXXCompilerId.dir/第二讲/deque.cpp.o CMakeFiles/CMakeCXXCompilerId.dir/第二讲/stack.cpp.o CMakeFiles/CMakeCXXCompilerId.dir/第二讲/queue.cpp.o
+build CMakeCXXCompilerId: CXX_EXECUTABLE_LINKER__CMakeCXXCompilerId_Debug CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   OBJECT_DIR = CMakeFiles/CMakeCXXCompilerId.dir
   POST_BUILD = :
@@ -708,7 +663,7 @@ build CMakeCXXCompilerId: CXX_EXECUTABLE_LINKER__CMakeCXXCompilerId_Debug CMakeF
 #############################################
 # Folder: /Users/jarsonsmac/CLionProjects/STL source code/cmake-build-debug
 
-build all: phony stack queue main list slist array deque forward_list vector CMakeCXXCompilerId
+build all: phony vector unordered_multiset unordered_map stack slist set queue multiset unordered_set multimap main list array map forward_list deque sample unordered_multimap CMakeCXXCompilerId
 
 # =============================================================================
 # Built-in targets

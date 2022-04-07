@@ -1,4 +1,4 @@
-## 第一讲:容器之分类及各种测试
+## 第二讲:容器之分类及各种测试
 
 ### 容器结构及分类
 
@@ -88,3 +88,46 @@ int compareStrings(const void* a, const void* b)
   deque其实已经涵盖了queue的功能：
 
   ![deque和queue的结构对比](img5.jpg)
+
+### 关联性容器使用及其测试
+* 使用容器multiset：[multiset.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/multiset.cpp)
+  * multiset的结构：
+  
+  ![multiset容器的结构](img6.png)
+* 使用容器multimap：[multimap.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/multimap.cpp)
+  * multimap的结构：
+  
+  ![multimap容器的结构](img7.jpg)
+* 使用容器unordered_multiset：[unordered_multiset.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/unordered_multiset.cpp)
+  * unordered_multiset的结构：
+  
+  ![unordered_multiset](img8.jpg)
+* 使用容器unordered_multimap：[unordered_multimap.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/unordered_multimap.cpp)
+  * unordered_multimap的结构：
+
+  ![unordered_multimap容器的结构](img9.jpg)
+* 使用容器set：[set.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/set.cpp)
+  * set的结构：和前面的multiset相同（为红黑树）
+* 使用容器map：[map.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/map.cpp)
+  * map的结构：和前面的multimap相同（为红黑树，每个节点有两个值组合起来）
+  
+* 使用容器unordered_set：[unordered_set.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/unordered_set.cpp)
+  * unordered_set的结构：和前面的unordered_multiset相同，底层为hashtable
+* 使用容器unordered_map：[unordered_map.cpp](https://github.com/caixiongjiang/STL_sourcecode/blob/master/%E7%AC%AC%E4%BA%8C%E8%AE%B2/unordered_map.cpp)
+  * unordered_map的结构：和前面的unordered_multimap相同，底层为hashtable
+
+注：
+* *priority_queue和heap是以其他的容器做底部支撑的，所以没有进行归类。*
+* *hash_set 等价于unordered_set*
+* *hash_map 等价于unordered_map*
+* *hash_multiset 等价于unordered_multiset*
+* *hash_multimap 等价于unordered_multimap*
+* *hash_~的头文件是放在特殊的头文件中，是在特殊的文件夹中*
+
+### 分配器使用及其测试
+
+分配器自身是用管理内存使用的，我们平常使用很少，一般直接使用容器里默认的分配器（可以省略），也就是说我们会直接使用容器。
+
+![分配器样例](img10.jpg)
+
+![分配器样例](img11.jpg)

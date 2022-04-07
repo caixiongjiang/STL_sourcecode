@@ -22,6 +22,63 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__vector_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__vector_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__unordered_multiset_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__unordered_multiset_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__unordered_map_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__unordered_map_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__stack_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -41,6 +98,44 @@ rule CXX_EXECUTABLE_LINKER__stack_Debug
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__slist_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__slist_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__set_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__set_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__queue_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -52,6 +147,63 @@ rule CXX_COMPILER__queue_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__queue_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__multiset_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__multiset_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__unordered_set_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__unordered_set_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__multimap_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__multimap_Debug
   command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -98,25 +250,6 @@ rule CXX_EXECUTABLE_LINKER__list_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__slist_Debug
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__slist_Debug
-  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
 rule CXX_COMPILER__array_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -136,7 +269,7 @@ rule CXX_EXECUTABLE_LINKER__array_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__deque_Debug
+rule CXX_COMPILER__map_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -146,7 +279,7 @@ rule CXX_COMPILER__deque_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__deque_Debug
+rule CXX_EXECUTABLE_LINKER__map_Debug
   command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -174,7 +307,7 @@ rule CXX_EXECUTABLE_LINKER__forward_list_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__vector_Debug
+rule CXX_COMPILER__deque_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -184,7 +317,45 @@ rule CXX_COMPILER__vector_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__vector_Debug
+rule CXX_EXECUTABLE_LINKER__deque_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sample_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__sample_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__unordered_multimap_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__unordered_multimap_Debug
   command = $PRE_LINK && /usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

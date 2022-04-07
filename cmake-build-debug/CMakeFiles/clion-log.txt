@@ -1,13 +1,22 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/gcc-11 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 -G Ninja "/Users/jarsonsmac/CLionProjects/STL source code"
     -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
     -- src/main.cpp will be compiled to bin/main
+    -- src/sample.cpp will be compiled to bin/sample
     -- src/array.cpp will be compiled to bin/array
     -- src/deque.cpp will be compiled to bin/deque
     -- src/forward_list.cpp will be compiled to bin/forward_list
     -- src/list.cpp will be compiled to bin/list
+    -- src/map.cpp will be compiled to bin/map
+    -- src/multimap.cpp will be compiled to bin/multimap
+    -- src/multiset.cpp will be compiled to bin/multiset
     -- src/queue.cpp will be compiled to bin/queue
+    -- src/set.cpp will be compiled to bin/set
     -- src/slist.cpp will be compiled to bin/slist
     -- src/stack.cpp will be compiled to bin/stack
+    -- src/unordered_map.cpp will be compiled to bin/unordered_map
+    -- src/unordered_multimap.cpp will be compiled to bin/unordered_multimap
+    -- src/unordered_multiset.cpp will be compiled to bin/unordered_multiset
+    -- src/unordered_set.cpp will be compiled to bin/unordered_set
     -- src/vector.cpp will be compiled to bin/vector
 -- Configuring done
 -- Generating done
