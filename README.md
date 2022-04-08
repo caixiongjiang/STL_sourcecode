@@ -8,3 +8,6 @@
 * [第二讲：容器之分类及各种测试](https://github.com/caixiongjiang/STL_sourcecode/tree/master/2.%E7%AC%AC%E4%BA%8C%E8%AE%B2)
 * [第三讲：泛型编程和模版技术](https://github.com/caixiongjiang/STL_sourcecode/tree/master/3.%E7%AC%AC%E4%B8%89%E8%AE%B2)
 * [第四讲：深入理解分配器](https://github.com/caixiongjiang/STL_sourcecode/tree/master/4.%E7%AC%AC%E5%9B%9B%E8%AE%B2)
+* [第五讲：深入理解list容器](https://github.com/caixiongjiang/STL_sourcecode/tree/master/5.%E7%AC%AC%E4%BA%94%E8%AE%B2)
+* [第六讲：迭代器设计的原则&iterator traits的作用与设计](https://github.com/caixiongjiang/STL_sourcecode/tree/master/6.%E7%AC%AC%E5%85%AD%E8%AE%B2)
+* 
