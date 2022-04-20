@@ -112,3 +112,192 @@ deque<T, Alloc, BufSize>::insert_aux(iterator pos, const value_type& x) {
 }
 ```
 **可以看出deque的insert是根据插入位置离头或者尾哪个更近，就往哪边推，也就是将安插点之前或之后的元素集体挪一格。**
+
+#### deque如何模拟连续空间
+
+```c++
+reference operator[] (size_type n)
+{
+    return start[different_type(n)];
+}
+
+reference front() { return *start; }
+
+reference back() 
+{
+    iterator tmp = finish;
+    --tmp;
+    return *tmp;
+}
+
+size_type size() const { return finish - start; }//这里的减号进行了操作符重载
+
+bool empty() const { return finish == start; }
+```
+
+**全部归功于deque iterators的操作符重载**：
+```c++
+//指针的操作符重载
+reference operator*() const { return *cur; }
+pointer operator->() const { return &(operator*()); }
+//"-"号的操作符重载
+difference_type operator-(const self& x) const {
+    //buffer_size()代表单个缓冲的容量
+    //node - x.node - 1 代表首尾buffers之间的完整的buffers数量
+    //cur - first 代表末尾（当前）buffer的元素量
+    //x.last - x.cur 代表起始buffer的元素量
+    //node代表中控器的某个格子，x代表最前面的buffer
+    return difference_type(buffer_size()) * (node - x.node - 1) 
+    + (cur - first) + (x.last - x.cur);
+}
+```
+自增和自减的操作符重载：
+```c++
+//前++
+self& operator++() {
+    ++cur;			// 切換至下一個元素。
+    if (cur == last) {		// 如果已达所在缓冲区的尾端
+         set_node(node + 1);	// 就切换至下一个缓冲区
+         cur = first;           //的第一个元素。
+    }
+    return *this; 
+}
+//后++
+self operator++(int)  {
+    self tmp = *this;
+    ++*this;
+    return tmp;
+}
+//前--
+self& operator--() {
+    if (cur == first) {	// 如果已达所在缓冲区的头端
+        set_node(node - 1);	// 就切换至前一个缓冲区
+        cur = last;	        // 的最后一个元素。
+    }
+    --cur;			// 切換至前一個元素。
+    return *this;
+}
+//后--
+self operator--(int) {
+    self tmp = *this;
+    --*this;
+    return tmp;
+}
+```
+
+其中的`set_node`函数如下：
+```c++
+void set_node (map_pointer new_node)
+{
+    node = new_node;
+    //重设first和last
+    first = *new_node;
+    last = fisrt + difference_type(buffer_size());
+}
+```
+"+="，"+"和"-="，"-"和下标操作符重载：
+```c++
+self& operator+=(difference_type n) {
+    difference_type offset = n + (cur - first);//+=n之后距离开头的偏移量
+    if (offset >= 0 && offset < difference_type(buffer_size()))
+        // 目标位置在同一缓冲区内
+        cur += n;
+    else {
+        // 目标位置不在同一缓冲区内，计算缓冲区需要前进的格数（退回中控器）
+        difference_type node_offset =
+        offset > 0 ? offset / difference_type(buffer_size())
+                   : -difference_type((-offset - 1) / buffer_size()) - 1;
+        // 切換至正確的缓冲区
+        set_node(node + node_offset);
+        // 切換至正確的元素
+        cur = first + (offset - node_offset * difference_type(buffer_size()));
+    }
+    return *this;
+}
+
+self operator+(difference_type n) const {
+    self tmp = *this;
+    return tmp += n; // 喚起operator+=
+}
+
+self& operator-=(difference_type n) { return *this += -n; }
+// 以上利用operator+= 來完成 operator-=
+
+self operator-(difference_type n) const {
+    self tmp = *this;
+    return tmp -= n; // 喚起operator-=
+}
+//连续的容器一定会有[]重载
+reference operator[](difference_type n) const { return *(*this + n); }
+```
+deque在GNU4.9下的结构：
+
+![](img9_2.jpg)
+
+### queue容器和stack容器
+
+queue和stack的功能特性与deque的相通之处：
+
+![](img9_3.jpg)
+
+* queue部分源码：
+```c++
+template <class T, class Sequence = deque<T>>
+class queue {
+    friend bool operator== __STL_NULL_TMPL_ARGS (const queue& x, const queue& y);
+    friend bool operator< __STL_NULL_TMPL_ARGS (const queue& x, const queue& y);
+public:
+    typedef typename Sequence::value_type value_type;
+    typedef typename Sequence::size_type size_type;
+    typedef typename Sequence::reference reference;
+    typedef typename Sequence::const_reference const_reference;
+protected:
+    Sequence c;	// 底層容器
+public:
+    // 以下完全利用 Sequence c 的操作，完成 queue 的操作。
+    bool empty() const { return c.empty(); }
+    size_type size() const { return c.size(); }
+    reference front() { return c.front(); }
+    const_reference front() const { return c.front(); }
+    reference back() { return c.back(); }
+    const_reference back() const { return c.back(); }
+    // deque 是兩頭可進出，queue 是末端進，前端出（所以先進者先出）。
+    void push(const value_type& x) { c.push_back(x); }
+    void pop() { c.pop_front(); }
+};
+```
+**可以看出queue基本都是在deque的基础上实现的**
+
+* stack部分源码：
+```c++
+template <class T, class Sequence = deque<T>>
+class stack {   
+    friend bool operator== __STL_NULL_TMPL_ARGS (const stack&, const stack&);
+    friend bool operator< __STL_NULL_TMPL_ARGS (const stack&, const stack&);
+public:
+    typedef typename Sequence::value_type value_type;
+    typedef typename Sequence::size_type size_type;
+    typedef typename Sequence::reference reference;
+    typedef typename Sequence::const_reference const_reference;
+protected:
+    Sequence c;	// 底層容器
+public:
+    // 以下完全利用 Sequence c 的操作，完成 stack 的操作。
+    bool empty() const { return c.empty(); }
+    size_type size() const { return c.size(); }
+    reference top() { return c.back(); }
+    const_reference top() const { return c.back(); }
+    // deque 是兩頭可進出，stack 是末端進，末端出（所以後進者先出）。
+    void push(const value_type& x) { c.push_back(x); }
+    void pop() { c.pop_back(); }
+};
+```
+**可以看出stack也都是在deque的基础上实现的**
+
+#### queue和stack，关于其iterator和底部结构
+* **stack和queue都不允许遍历，也不提供iterator，因为这会破坏这两个结构的特性！**
+* stack和queue都可以选择list或者deque作为底部结构，也就是说list可以取代deque成为queue和stack的底部结构！
+* stack可选择vector作为底部结构，queue不可选择vector作为底部结构（因为不能调用其pop()函数），
+**但如果用不到pop()函数也是ok的，编译器不会报错**
+* stack和queue都不可用set或者map作为底部支撑
+

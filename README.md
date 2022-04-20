@@ -13,3 +13,4 @@
 * [第七讲：vector深度探索](https://github.com/caixiongjiang/STL_sourcecode/tree/master/7.%E7%AC%AC%E4%B8%83%E8%AE%B2)
 * [第八讲：array和forward_list深度探索](https://github.com/caixiongjiang/STL_sourcecode/tree/master/8.%E7%AC%AC%E5%85%AB%E8%AE%B2)
 * [第九讲：deque，queue，stack深度探索](https://github.com/caixiongjiang/STL_sourcecode/tree/master/9.%E7%AC%AC%E4%B9%9D%E8%AE%B2)
+* [第十讲：rb_tree深度探索](https://github.com/caixiongjiang/STL_sourcecode/tree/master/10.%E7%AC%AC%E5%8D%81%E8%AE%B2)

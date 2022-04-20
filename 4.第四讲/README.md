@@ -42,4 +42,4 @@ GNU2.9下：
 
 GNU4.9下：
 * 容器使用的分配器又变为了allocator，继承于new_allocator，使用operator new() 和 operator delete()
-* 2.9下的alloc被更名为__pool_alloc，属于__gnu_cxx::__pool_alloc
+* 4.9下的alloc被更名为__pool_alloc，属于__gnu_cxx::__pool_alloc
