@@ -12,9 +12,7 @@ c++标准库设计了5种回答方式,集成在class中（迭代器相关的类�
 
 ![5种associated type](img1.jpg)
 
-但如果iterator本身不是class，例如native pointer（退化的iterator），如何回答算法的5个问题？
-
-![iterator traits](img2.jpg)
+但如果iterator本身不是class，例如native pointer（退化的iterator），如何回答算法的5个问题？![iterator traits](img2.jpg)
 
 
 ![iterator traits](img3.jpg)
