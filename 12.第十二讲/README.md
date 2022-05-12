@@ -20,37 +20,100 @@ hashtable的结构来存储！
     * 每次扩充都需要对每个元素重新计算新的位置。
     * 在源码中已经将所有`bucket`的值全部算好了，需要扩充时，直接取就ok！
 
-部分源码（GNU2.9）：
+* hashtable部分源码（GNU2.9）：
+    ```c++
+    template <class Value, class Key, class HashFcn,
+              class ExtractKey, class EqualKey,
+              class Alloc> 	
+    class hashtable {
+    public: 
+        //将传进来的参数重新换了一个名称
+        typedef HashFcn hasher;
+        typedef EqualKey key_equal;
+        typedef size_t            size_type;
+    private:
+        // 以下三者都是function objects。<stl_hash_fun.h> 中定義有數個
+        // 標準型別（如int,c-style string 等）的hasher。
+        hasher hash;	
+        key_equal equals;
+        ExtractKey get_key;
+    
+        typedef __hashtable_node<Value> node;
+        vector<node*,Alloc> buckets;	// bucket代表能拉出链表的每个缓存，buckets用 vector 完成
+        size_type num_elements;
+    public:
+        size_type bucket_count() const {return buckets.size();}
+        ...
+    };
+    ```
+    其中`__hashtable_node`的定义如下：
+    ```c++
+    template<class Value> struct __hashtable_node {
+        __hashtable_node* next;
+        Value val;
+    };
+    ```
+
+* hashtable的字节数：20个Bytes
+    * 闯入的3个参数占用3个字节
+    * `buckets`占用12个Bytes：因为buckets使用vector实现，前面我们说过每个vector本身维护
+  三个泛化指针，而每个指针占用4个Bytes。
+    * `num_elements`为size_type类型，代表元素的个数，类似于`unsigned_interger`占用4个Bytes。
+    * 总共占用19个Bytes，因为要符合内存对齐的原则，将其调整为4的倍数20Bytes。
+
+    * hashtable的迭代器设计：
+        * 在VC中链表采用双向链表的方式，使得链表走到边界的时候有能力回到原来的位置。
+        * 在GNU2.9中则维护两个指针的方式来运行，一个为`node`类型的cur指针,指向当前在链表中的位置，另一个
+      为`hashtable`类型的ht指针，指向当前多处的`bucket`的位置。部分源码如下：
+        ```c++
+        template<class Value, class Key, class HashFcn,
+              class ExtractKey, class EqualKey,
+              class Alloc>
+      struct __hashtable_iterator {
+          ...
+          node* cur;
+          hashtable* ht;
+      };
+      ```
+      
+### 尝试使用hashtable
+demo：
 ```c++
-template <class Value, class Key, class HashFcn,
-          class ExtractKey, class EqualKey,
-          class Alloc> 	
-class hashtable {
-public: 
-    typedef HashFcn hasher;
-    typedef EqualKey key_equal;
-    typedef size_t            size_type;
+hashtable<const char*, 
+                const char*,
+                hash<const char*>,
+                identity<const char*>,//如何从value中取出key的规则（这里key就为value）
+                eqstr,//是一个仿函数，代表比较的规则，使其比较的对象变成指针指向的内容，而不是指针本身
+                alloc>
+ht(50, hash<const char*>(), eqstr());
 
-private:
-    // 以下三者都是function objects。<stl_hash_fun.h> 中定義有數個
-    // 標準型別（如int,c-style string 等）的hasher。
-    hasher hash;	
-    key_equal equals;
-    ExtractKey get_key;
+//不重复的插入
+ht.insert_unique("kiwi");
+ht.insert_unique("plum");
+ht.insert_unique("apple");
+```
+其中`eqstr`如下(这里使用了c风格的字符串`char*`，所以需要另外定义比较的规则)：
+```c++
+/*比较c-string是否相等，有strcmp()可以使用，但它传回-1，0，1，不是传回bool，
+所以必须加一层外套*/
 
-    typedef __hashtable_node<Value> node;
-    vector<node*,Alloc> buckets;	// 以 vector 完成
-    size_type num_elements;
-public:
-    size_type bucket_count() const {return buckets.size();}
-    ...
+struct eqstr {
+    bool operator()(const char* s1, const char* s2)const
+    { return strcmp(s1, s2) == 0; }
 };
 ```
-其中`__hashtable_node`的定义如下：
-```c++
-template<class Value> struct __hashtable_node {
-    __hashtable_node* next;
-    Value val;
-};
-```
+其中`hash`使用了类似于下图的偏特化：
+
+![](img12_3.jpg)
+它的作用是执行`hash-function`：希望根据元素之算出一个`hash-code`,也可以说将传入的数值转化为编号，
+使得元素经过`hash_code`（这里其实是前面所讲的模的值）映射之后能够足够乱，尽量不会发生碰撞！
+
+比如s为"abc"，那么计算得到的h值为`5*（5 * 'a' + 'b'）+ 'c'`
+
+*注意标准库没有提供`hash<std::string>`*
+
+### modules运算
+所谓modules运算就是计算元素值要落在**哪个bukcet**的链表上。
+目前都使用`{ return hash(key) % n; }`
+
 
