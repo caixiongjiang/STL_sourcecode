@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jarsonsmac/CLionProjects/STL source code
+# Install script for directory: /Users/caixiongjiang/github仓库/STL_sourcecode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jarsonsmac/CLionProjects/STL source code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/caixiongjiang/github仓库/STL_sourcecode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

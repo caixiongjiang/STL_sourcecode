@@ -1,7 +1,24 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/gcc-11 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 -G Ninja "/Users/jarsonsmac/CLionProjects/STL source code"
-    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
-    -- src/main.cpp will be compiled to bin/main
-    -- src/sample.cpp will be compiled to bin/sample
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/gcc-11 -DCMAKE_CXX_COMPILER=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/g++-11 -G "CodeBlocks - Unix Makefiles" /Users/caixiongjiang/github仓库/STL_sourcecode
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Checking whether C compiler has -isysroot
+-- Checking whether C compiler has -isysroot - yes
+-- Checking whether C compiler supports OSX deployment target flag
+-- Checking whether C compiler supports OSX deployment target flag - yes
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/homebrew/Cellar/gcc/11.3.0_2/bin/gcc-11 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/homebrew/Cellar/gcc/11.3.0_2/bin/g++-11 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
     -- src/array.cpp will be compiled to bin/array
     -- src/deque.cpp will be compiled to bin/deque
     -- src/forward_list.cpp will be compiled to bin/forward_list
@@ -18,6 +35,9 @@
     -- src/unordered_multiset.cpp will be compiled to bin/unordered_multiset
     -- src/unordered_set.cpp will be compiled to bin/unordered_set
     -- src/vector.cpp will be compiled to bin/vector
+    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
+    -- src/main.cpp will be compiled to bin/main
+    -- src/sample.cpp will be compiled to bin/sample
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/jarsonsmac/CLionProjects/STL source code/cmake-build-debug
+-- Build files have been written to: /Users/caixiongjiang/github仓库/STL_sourcecode/cmake-build-debug
